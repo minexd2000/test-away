@@ -1,3 +1,4 @@
-@echo off
-echo It has been tested
-pause
+def main():
+    print("the script has been tested")
+if __name__ == "__main__":
+    main()
