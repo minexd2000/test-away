@@ -8,7 +8,7 @@ jobs:
 
     steps:
     - name: downlowd
-      run: Invoke-WebRequest https://raw.githubusercontent.com/minexd2000/test-away/main/test.bat -OutFile test.bat
+      run: Invoke-WebRequest https://raw.githubusercontent.com/minexd2000/test-away/main/test.py -OutFile test.py
     - name: Run Python script
-      run: .\test.bat
+      run: .\test.py
 
