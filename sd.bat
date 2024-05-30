@@ -5,5 +5,5 @@ for /l %%x in (31536000,-1,1) do (
     echo Wait %%x seconds for the next execution.
     ping localhost -n 2 >nul
 )
-start "" echo "end.bat"
+start "" echo "ended"
 exit
